@@ -1,4 +1,5 @@
-<?php require_once('../../library.php'); ?>
+<?php header('location:settings');
+require_once('../../library.php'); ?>
 <?php require_once('../../con-cot/conn_sqli.php'); ?>
 <?php require_once('../../lib/sqli-functions2.php'); ?>
 <?php require_once('../../lib/basic-functions.php'); ?>

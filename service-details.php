@@ -68,7 +68,7 @@ require_once('head.php');
         </div>
         <div class="index2-about-image-box position-relative" data-aos="fade-up" data-aos-duration="700">
           <figure class="mb-0">
-            <img src="<?php print 'photo/' . $row['big_image']; ?>" alt="woman-dental-checkup">
+            <img width="100%" src="<?php print 'photo/' . $row['big_image']; ?>" alt="woman-dental-checkup">
           </figure>
         </div>
       </div>
