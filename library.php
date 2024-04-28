@@ -85,6 +85,7 @@ $siteLink = 'https://dulcetcare.co.uk/accounts/register';
 $siteRegister = 'https://dulcetcare.co.uk/accounts/register';
 $siteLogin = 'https://dulcetcare.co.uk/accounts/login';
 $site = 'https://dulcetcare.co.uk';
+
 $domain = 'dulcetcare.co.uk';
 $siteName = $row['site_name'];
 $site_email = $row['site_email'];
