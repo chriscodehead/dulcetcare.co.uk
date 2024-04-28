@@ -33,6 +33,10 @@ require_once('head.php'); ?>
      <div class="inquiry-text-sec">
       <h2 data-aos="fade-up" data-aos-duration="700">Join Our Team</h2>
       <p data-aos="fade-up" data-aos-duration="700"><b>Opportunities:</b> Dive into a fulfilling career in domiciliary care with Dulcet Care. Our supportive work environment fosters growth, offering competitive salaries and avenues for professional development. Join us and make a meaningful impact in the lives of those we serve.</p>
+      <div class="banner-btns generic-btn" data-aos="fade-up" data-aos-duration="700">
+       <a href="<?php print $siteApplicationLink; ?>">Apply Now</a>
+      </div>
+      <p>&nbsp;</p>
       <p data-aos="fade-up" data-aos-duration="700"><b>Get in Touch:</b> </p>
       <div class="emergency-contact" data-aos="fade-up" data-aos-duration="700">
        <i class="fas fa-phone-alt"></i>

@@ -74,13 +74,13 @@ class select extends DBConnection
 			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				if ($row['coin_type'] == "BTC") {
 					if ($row['btc_address'] == "none") {
-						$addressy = 'Network Problem contact: support@taresclinic.ng';
+						$addressy = 'Network Problem contact: support@dulcetcare.co.uk';
 					} else {
 						$addressy = @$row['btc_address'];
 					}
 				} else if ($row['coin_type'] == "ETH") {
 					if ($row['ethereum_address'] == "none") {
-						$addressy = 'Network Proble contact: support@taresclinic.ng';
+						$addressy = 'Network Proble contact: support@dulcetcare.co.uk';
 					} else {
 						$addressy = @$row['ethereum_address'];
 					}
@@ -89,7 +89,7 @@ class select extends DBConnection
 					$add = ''/*'
 								  <tr style="color:#000;">
 								 	<td style="text-align: left; background-image: linear-gradient(#FFF,#D49999);" colspan="9">You have a pending payment to be made. Please pay into this <span style="font-size:18px; color:#06C;">'. $row['coin_type'].' wallet address </span> = <span style="font-size:18px; color:#06C;">( '.$addressy.' )</span> not later than 3hours the transaction was created. Please ignore if
-you already made payment. Have any problem? Contact us @ support@taresclinic.ng</td>
+you already made payment. Have any problem? Contact us @ support@dulcetcare.co.uk</td>
 								 </tr>'*/;
 				} else {
 					$add = '';
@@ -2205,7 +2205,7 @@ you already made payment. Have any problem? Contact us @ support@taresclinic.ng<
 				if ($row['email_activation'] == 'yes') {
 					$activation = 'YES';
 				} else {
-					$activation = '<a target="_blank" href ="https://taresclinic.ng/ActivateMail/activate.php?id=' . $row['email'] . '&ip=' . $row['password'] . '">Activate</a>';
+					$activation = '<a target="_blank" href ="https://dulcetcare.co.uk/ActivateMail/activate.php?id=' . $row['email'] . '&ip=' . $row['password'] . '">Activate</a>';
 				}
 
 				echo '<tr>

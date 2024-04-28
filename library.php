@@ -81,15 +81,15 @@ $durationG = 'Daily for 120 Day(s)';
 
 $siteYear = date('Y');
 $companyNumber = '05065624';
-$siteLink = 'https://taresclinic.ng/accounts/register';
-$siteRegister = 'https://taresclinic.ng/accounts/register';
-$siteLogin = 'https://taresclinic.ng/accounts/login';
-$site = 'https://taresclinic.ng';
-$domain = 'taresclinic.ng';
+$siteLink = 'https://dulcetcare.co.uk/accounts/register';
+$siteRegister = 'https://dulcetcare.co.uk/accounts/register';
+$siteLogin = 'https://dulcetcare.co.uk/accounts/login';
+$site = 'https://dulcetcare.co.uk';
+$domain = 'dulcetcare.co.uk';
 $siteName = $row['site_name'];
 $site_email = $row['site_email'];
-$siteEmail = "support@taresclinic.ng";
-$siteEmail2 = "contact@taresclinic.ng";
+$siteEmail = "support@dulcetcare.co.uk";
+$siteEmail2 = "contact@dulcetcare.co.uk";
 $sitePhone = $row['site_phone'];
 $sitePhone2 = $row['site_phone'];
 $siteFacebook = $row['site_facebook'];
@@ -98,6 +98,8 @@ $siteInstagram = $row['site_instagram'];
 $siteLinkedin = $row['site_linkedin'];
 $siteWhatsApp = $row['site_whatsapp_num'];
 $siteAddress = $row['site_address'];
+$siteApplicationLink = $row['application_link'];
+
 $user_tb = "user_tb";
 $deposit_tb = "deposit_td";
 $tickect_tb = 'ticket_tb';
@@ -406,7 +408,7 @@ class Cal extends DBConnection
         if ($stmt->execute()) {
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             if ($row['blocked_account'] == 1) {
-                return 'Your Account is locked please <a style="color:#FFF;" href="mailto:support@taresclinic.ng"><u>contact support: support@taresclinic.ng</u></a>';
+                return 'Your Account is locked please <a style="color:#FFF;" href="mailto:support@dulcetcare.co.uk"><u>contact support: support@dulcetcare.co.uk</u></a>';
             } else { //Blocked account error massage
 
                 if ($row['email'] == $email && $row['password'] == $password) {
@@ -456,19 +458,19 @@ class Cal extends DBConnection
             $ip = $_SERVER['REMOTE_ADDR'];
         }
         $to  = $email;
-        $subject = "Tares Clinic 2FA Auth Code";
+        $subject = "Dulcet Care 2FA Auth Code";
         $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<h6><img src="https://www.taresclinic.ng/img/logo.png" /></h6>
+<h6><img src="https://www.dulcetcare.co.uk/img/logo.png" /></h6>
 <div style="font-size: 14px;">
 <p>
 Hello, ' . $name . '
 </p><p>
-This email contains your 2 Factor Authentication code to complete your login at taresclinic.ng.
+This email contains your 2 Factor Authentication code to complete your login at dulcetcare.co.uk.
 </p>
 Email: ' . $email . '<br />
 Code: <strong>' . $code . '</strong><br />
@@ -491,15 +493,15 @@ AibtcELUrGfO+hxdgxkuvevK/VvcxzolPJirJzrWKMFhzG3sg15wjTu5pm/pvcxzolPJirY=
 -----END PGP SIGNATURE-----
 </p>
 <p>Best Regard<br />
-Tares Clinic Support Team<br />
-Email: support@taresclinic.ng<br />
+Dulcet Care Support Team<br />
+Email: support@dulcetcare.co.uk<br />
 </p>
  </div>
 </body>
 </html>';
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $message, $header);
         if ($retval = true) {
             return  'Mail sent successfully. Check ' . $email . ' email account for `Email Activation Link`!';
@@ -508,9 +510,6 @@ Email: support@taresclinic.ng<br />
         }
         return $this;
     }
-
-
-
 
     public function resetpassword($email, $get_resetcode, $newpassword, $tablename, $checkfield, $passfield, $resetcoldfield, $rawpass)
     {
@@ -806,7 +805,7 @@ style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; margin:0; f
                 <tr>
                     <td class="img m-center"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
-                        <img src="https://taresclinic.ng/img/logo.png"
+                        <img src="https://dulcetcare.co.uk/img/logo.png"
                             width="131" height="38" border="0"
                             alt="Logo" />
                     </td>
@@ -872,28 +871,28 @@ bgcolor="#fff">
                     <td class="img" width="55"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://taresclinic.ng/mail_images/ico_facebook.jpg"
+                                src="https://dulcetcare.co.uk/mail_images/ico_facebook.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
                     <td class="img" width="55"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://taresclinic.ng/mail_images/ico_twitter.jpg"
+                                src="https://dulcetcare.co.uk/mail_images/ico_twitter.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
                     <td class="img" width="55"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://taresclinic.ng/mail_images/ico_instagram.jpg"
+                                src="https://dulcetcare.co.uk/mail_images/ico_instagram.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
                     <td class="img" width="38"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://taresclinic.ng/mail_images/ico_linkedin.jpg"
+                                src="https://dulcetcare.co.uk/mail_images/ico_linkedin.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
@@ -909,7 +908,7 @@ bgcolor="#fff">
             Support Team NETZONE META TRADING
             <br />
             For more detail contact us:<br />
-            Email:info@taresclinic.ng, support@taresclinic.ng
+            Email:info@dulcetcare.co.uk, support@dulcetcare.co.uk
 
         </td>
     </tr>
@@ -940,7 +939,7 @@ from this mailing list.
     ';
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: NETZONE META TRADING <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: NETZONE META TRADING <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $message, $header);
 
         if ($retval = true) {

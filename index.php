@@ -232,63 +232,35 @@ require_once('head.php'); ?>
 
         <div id="fade1" onClick="lightbox_close();"></div>
     </section>
-    <!-- ABOUT SECTION END -->
-    <!-- CONTACT SECTION START -->
-    <section class="w-100 float-left contact-con position-relative">
-        <div class="padding-top padding-bottom contact-inner-con position-relative">
+
+
+    <div class="inquiry-section w-100 float-left">
+        <div class="counter-outer-layer">
             <div class="container">
-                <div class="contact-form ">
-                    <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
-                    <h2 data-aos="fade-up" data-aos-duration="700">Get an Appointment</h2>
-                    <p data-aos="fade-up" data-aos-duration="700">Secure your spot effortlessly with our convenient appointment booking service, ensuring prompt access to the care and attention you deserve.
-                    </p>
-                    <form class="form-box" enctype="multipart/form-data" method="post" id="contactpage">
-                        <ul class="list-unstyled ">
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <input type="text" name="name" id="name" placeholder="Your Name:">
-                                <i class="fas fa-user"></i>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <input type="email" placeholder="Email address:" name="email" id="email">
-                                <i class="fas fa-envelope"></i>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <select name="department" id="department">
-                                    <option value="department">Choose department</option>
-                                    <option value="department1">department 1</option>
-                                    <option value="department2">department 2</option>
-                                    <option value="department3">department 3</option>
-                                </select>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <select name="doctor" id="doctor">
-                                    <option value="doctor">Choose doctor</option>
-                                    <option value="doctor1">doctor 1</option>
-                                    <option value="doctor2">doctor 2</option>
-                                    <option value="doctor3">doctor 3</option>
-                                </select>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <input placeholder="Date & Time" type="date" id="date" name="date">
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                                <i class="fas fa-phone-alt"></i>
-                            </li>
-                        </ul>
-                        <div class="for-group">
-                            <textarea class="form-control" name="message" id="message" rows="5" style="border: none;font-size: 14px; height: 100px; color: #fff !important; width: 100%; background: #ef916c; box-shadow: 0 0 0 1px #f3ad91; padding: 10px 35px 10px 23px; border-radius: 5px;" placeholder="Write Your Message Here....."></textarea>
+                <div class="inquiry-inner-sec">
+                    <div class="inquiry-text-sec">
+                        <h2 data-aos="fade-up" data-aos-duration="700">Join Our Team</h2>
+                        <p data-aos="fade-up" data-aos-duration="700"><b>Opportunities:</b> Dive into a fulfilling career in domiciliary care with Dulcet Care. Our supportive work environment fosters growth, offering competitive salaries and avenues for professional development. Join us and make a meaningful impact in the lives of those we serve.</p>
+                        <p data-aos="fade-up" data-aos-duration="700"><b>Start your application:</b> </p>
+                        <div class="banner-btns generic-btn" data-aos="fade-up" data-aos-duration="700">
+                            <a href="<?php print $siteApplicationLink; ?>">Apply Now</a>
                         </div>
-                        <div style="margin-top: 30px;" class="submit-btn" data-aos="fade-up" data-aos-duration="700">
-                            <button type="button" id="submit" onclick="appointmentMail()">
-                                Make an Appointment
-                            </button>
-                        </div>
-                    </form>
+
+                        <div class="col-12" style="padding-bottom: 50px;"></div>
+                    </div>
+                    <div class="inquiry-image-sec position-relative" data-aos="fade-up" data-aos-duration="700">
+
+                        <figure class="mb-0 inquiry-center-img">
+                            <img src="img/meeting-sitting-office-table.jpg" alt="retractor-img">
+                        </figure>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+
 
     <section class="process-main-section w-100 float-left padding-top padding-bottom">
         <div class="container">
@@ -347,6 +319,61 @@ require_once('head.php'); ?>
         </div>
     </section>
 
+    <section class="w-100 float-left contact-con position-relative">
+        <div class="padding-top padding-bottom contact-inner-con position-relative">
+            <div class="container">
+                <div class="contact-form ">
+                    <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
+                    <h2 data-aos="fade-up" data-aos-duration="700">Get an Appointment</h2>
+                    <p data-aos="fade-up" data-aos-duration="700">Secure your spot effortlessly with our convenient appointment booking service, ensuring prompt access to the care and attention you deserve.
+                    </p>
+                    <form class="form-box" enctype="multipart/form-data" method="post" id="contactpage">
+                        <ul class="list-unstyled ">
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input type="text" name="name" id="name" placeholder="Your Name:">
+                                <i class="fas fa-user"></i>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input type="email" placeholder="Email address:" name="email" id="email">
+                                <i class="fas fa-envelope"></i>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <select name="department" id="department">
+                                    <option value="department">Choose department</option>
+                                    <option value="department1">department 1</option>
+                                    <option value="department2">department 2</option>
+                                    <option value="department3">department 3</option>
+                                </select>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <select name="doctor" id="doctor">
+                                    <option value="doctor">Choose doctor</option>
+                                    <option value="doctor1">doctor 1</option>
+                                    <option value="doctor2">doctor 2</option>
+                                    <option value="doctor3">doctor 3</option>
+                                </select>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input placeholder="Date & Time" type="date" id="date" name="date">
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                                <i class="fas fa-phone-alt"></i>
+                            </li>
+                        </ul>
+                        <div class="for-group">
+                            <textarea class="form-control" name="message" id="message" rows="5" style="border: none;font-size: 14px; height: 100px; color: #fff !important; width: 100%; background: #ef916c; box-shadow: 0 0 0 1px #f3ad91; padding: 10px 35px 10px 23px; border-radius: 5px;" placeholder="Write Your Message Here....."></textarea>
+                        </div>
+                        <div style="margin-top: 30px;" class="submit-btn" data-aos="fade-up" data-aos-duration="700">
+                            <button type="button" id="submit" onclick="appointmentMail()">
+                                Make an Appointment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="blogs-section w-100 float-left padding-top padding-bottom light-bg">
         <div class="container">

@@ -30,10 +30,11 @@ if (isset($_POST['settings'])) {
     $instagram = $_POST['instagram'];
     $site_linkedin = $_POST['site_linkedin'];
     $site_twitter = $_POST['site_twitter'];
+    $application_link = $_POST['application_link'];
 
     if (!empty($site_name)) {
-        $feilds = array('site_name', 'site_whatsapp_num', 'site_phone', 'site_address', 'site_email', 'site_facebook', 'site_instagram', 'site_linkedin', 'site_twitter');
-        $value = array($site_name, $site_whatsapp_num, $site_phone, $site_address, $custom_email, $facebook, $instagram, $site_linkedin, $site_twitter);
+        $feilds = array('site_name', 'site_whatsapp_num', 'site_phone', 'site_address', 'site_email', 'site_facebook', 'site_instagram', 'site_linkedin', 'site_twitter', 'application_link');
+        $value = array($site_name, $site_whatsapp_num, $site_phone, $site_address, $custom_email, $facebook, $instagram, $site_linkedin, $site_twitter, $application_link);
         $msg = $cal->update($settings, $feilds, $value, 'id', 1);
     } else {
         $msg = "Fill all empty fields!";
@@ -103,6 +104,10 @@ require_once('head.php') ?>
                                     <tr>
                                         <td>Email:</td>
                                         <td><input name="custom_email" value="<?php print $sqli->getSettings('site_email'); ?>" type="text" class="form-control" placeholder="custom_email" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Application Link:</td>
+                                        <td><input name="application_link" value="<?php print $sqli->getSettings('application_link'); ?>" type="text" class="form-control" placeholder="Application Link" /></td>
                                     </tr>
                                     <tr>
                                         <td>Facebook:</td>

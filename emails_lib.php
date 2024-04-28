@@ -1,8 +1,8 @@
 <?php
 class email
 {
-    protected $siteName = 'Tares Clinic';
-    protected $siteDomain = 'taresclinic.ng';
+    protected $siteName = 'Dulcet Care';
+    protected $siteDomain = 'dulcetcare.co.uk';
     protected $site_whatsapp_num = '';
 
     public function generalBody($message)
@@ -19,7 +19,7 @@ class email
                         <tbody>
                             <tr>
                                 <td style="text-align: center; padding-bottom:25px">
-                                    <a href="https://taresclinic.ng/"><img style="height: 40px" src="https://taresclinic.ng/img/logo.png" alt="logo"></a>
+                                    <a href="https://dulcetcare.co.uk/"><img style="height: 40px" src="https://dulcetcare.co.uk/img/logo.png" alt="logo"></a>
                                     <p style="font-size: 14px; color: #6576ff; padding-top: 12px;">Unlock Your Creative Potential and Ignite Your Design Career</p>
                                 </td>
                             </tr>
@@ -38,13 +38,13 @@ class email
                         <tbody>
                             <tr>
                                 <td style="text-align: center; padding:25px 20px 0;">
-                                    <p style="font-size: 13px;">Copyright © ' . $d . ' Tares Clinic. All rights reserved.</p>
+                                    <p style="font-size: 13px;">Copyright © ' . $d . ' Dulcet Care. All rights reserved.</p>
                                     <ul style="margin: 10px -4px 0;padding: 0;">
-                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://facebook.com/"><img style="width: 30px" src="https://taresclinic.ng/mail_images/brand-b.png" alt="brand"></a></li>
-                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://twitter.com/"><img style="width: 30px" src="https://taresclinic.ng/mail_images/brand-e.png" alt="brand"></a></li>
-                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://youtube.com/"><img style="width: 30px" src="https://taresclinic.ng/mail_images/brand-d.png" alt="brand"></a></li>
+                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://facebook.com/"><img style="width: 30px" src="https://dulcetcare.co.uk/mail_images/brand-b.png" alt="brand"></a></li>
+                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://twitter.com/"><img style="width: 30px" src="https://dulcetcare.co.uk/mail_images/brand-e.png" alt="brand"></a></li>
+                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://youtube.com/"><img style="width: 30px" src="https://dulcetcare.co.uk/mail_images/brand-d.png" alt="brand"></a></li>
                                     </ul>
-                                    <p style="padding-top: 15px; font-size: 12px;">For more detail contact us: info@taresclinic.ng, support@taresclinic.ng</p><p style="padding-top: 15px; font-size: 12px;">This email was sent to you as a registered user of <a style="color: #6576ff; text-decoration:none;" href="https://taresclinic.ng/">Tares Clinic</a>.</p>
+                                    <p style="padding-top: 15px; font-size: 12px;">For more detail contact us: info@dulcetcare.co.uk, support@dulcetcare.co.uk</p><p style="padding-top: 15px; font-size: 12px;">This email was sent to you as a registered user of <a style="color: #6576ff; text-decoration:none;" href="https://dulcetcare.co.uk/">Dulcet Care</a>.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -67,7 +67,7 @@ class email
         $content = $message; //self::generalBody($message);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -84,7 +84,7 @@ class email
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -101,7 +101,7 @@ class email
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -118,7 +118,7 @@ class email
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -135,7 +135,7 @@ class email
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -147,12 +147,12 @@ class email
     public function referalNew($nameM, $emailM, $nameR, $emailR, $usernameM, $usernameR)
     {
         $to  = $emailR;
-        $subject = 'You have a new direct sign-up on taresclinic.ng';
-        $info = 'Dear ' . $nameR . '(' . $usernameR . '), <br><br /> You have a new direct referral sign-up on <br />taresclinic.ng<br />User: ' . $usernameM . '<br />Name: ' . $nameM . '<br>E-mail: ' . $emailM . '<br><br >Thank You.';
+        $subject = 'You have a new direct sign-up on dulcetcare.co.uk';
+        $info = 'Dear ' . $nameR . '(' . $usernameR . '), <br><br /> You have a new direct referral sign-up on <br />dulcetcare.co.uk<br />User: ' . $usernameM . '<br />Name: ' . $nameM . '<br>E-mail: ' . $emailM . '<br><br >Thank You.';
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -163,13 +163,13 @@ class email
 
     public function clientReviews($name, $email, $review)
     {
-        $to  = 'info@taresclinic.ng';
+        $to  = 'info@dulcetcare.co.uk';
         $subject = 'Review From ' . $name;
         $info = 'Hi Admin, ' . $name . ' sent you a review. Visit your dashboard to approve or disapprove this review. <br />Details:  <br> Review: ' . $review . '.<br> Email: ' . $email;
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -180,13 +180,13 @@ class email
 
     public function adminwithdrawsNoticeA($amount, $plan, $coin, $id, $name, $email)
     {
-        $to  = 'info@taresclinic.ng';
+        $to  = 'info@dulcetcare.co.uk';
         $subject = 'Referral Withdrawal Notification by ' . $name;
         $info = 'Hi Admin, client with name ' . $name . ' requested to withdraw his referral commission <br />Amount: $' . $amount . ' <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id . '.';
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -197,13 +197,13 @@ class email
 
     public function adminDepositNotice($amount, $plan, $coin, $id, $name, $email)
     {
-        $to  = 'info@taresclinic.ng';
+        $to  = 'info@dulcetcare.co.uk';
         $subject = 'Sucessful Deposite by ' . $name;
         $info = 'Hi Admin client ' . $name . ' just successfully deposited <br />Amount: $' . $amount . ' <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id . '.';
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -214,13 +214,13 @@ class email
 
     public function adminDepositNoticeNotsuccessf($amount, $plan, $coin, $id, $name, $email)
     {
-        $to  = 'info@taresclinic.ng';
+        $to  = 'info@dulcetcare.co.uk';
         $subject = 'Deposite Notification by ' . $name;
         $info = 'Hi Admin, client with name ' . $name . ' just successfully initiated a deposited of <br />Amount: $' . $amount . ', <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id . '. <br />You will be also notified when he finally makes payments.';
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -231,13 +231,13 @@ class email
 
     public function adminWithdrawalNotice($amount, $plan, $coin, $id, $name, $email, $wallet)
     {
-        $to  = 'info@taresclinic.ng';
+        $to  = 'info@dulcetcare.co.uk';
         $subject = 'Withdrawal request by ' . $name;
         $info = 'Hi Admin, client with ' . $name . ' request to withdraw <br />Amount: $' . $amount . ', <br />Wallet: ' . $wallet . ', <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id;
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -254,7 +254,7 @@ class email
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return  'Mail sent successfully';
@@ -265,13 +265,13 @@ class email
 
     public function contactUsMail($name, $phone, $email, $subject, $message)
     {
-        $to  = 'support@taresclinic.ng';
+        $to  = 'support@dulcetcare.co.uk';
         $subject = $subject;
         $info = $message . '<br /></br><h3>Patients Details:</h3><strong>Name: ' . $name . ',<br />Email: ' . $email . ', <br />Phone: ' . $phone . ' </strong>';
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             self::autoReplyMail($name, $email, $subject);
@@ -283,7 +283,7 @@ class email
 
     public function appointmentMail($name, $phone, $email, $subject, $message, $doctor, $datepicker, $department)
     {
-        $to  = 'support@taresclinic.ng';
+        $to  = 'support@dulcetcare.co.uk';
         $subject = $subject;
         $info = $message . '<br><br>
         <h3>Patients Details:</h3>
@@ -298,7 +298,7 @@ class email
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             self::autoReplyMail($name, $email, $subject);
@@ -318,7 +318,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -340,7 +340,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From:Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From:Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -361,7 +361,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From:Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From:Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -381,7 +381,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -401,7 +401,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -421,7 +421,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -443,7 +443,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -463,7 +463,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -483,7 +483,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -503,7 +503,7 @@ class email
         $content = $info; //self::generalBody($info);
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $headers .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $headers);
         if ($retval) {
             return   'Mail sent successfully';
@@ -528,7 +528,7 @@ class email
         $content = $info; //self::generalBody($info);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval) {
             return  'Mail sent successfully';
@@ -613,7 +613,7 @@ class email
                         <tbody>
                             <tr>
                                 <td style="text-align: center; padding-bottom:25px">
-                                    <a href="https://taresclinic.ng/"><img style="height: 40px" src="https://taresclinic.ng/img/logo.png" alt="logo"></a>
+                                    <a href="https://dulcetcare.co.uk/"><img style="height: 40px" src="https://dulcetcare.co.uk/img/logo.png" alt="logo"></a>
                                     <p style="font-size: 14px; color: #6576ff; padding-top: 12px;">Refer, Share and Earn</p>
                                 </td>
                             </tr>
@@ -630,13 +630,13 @@ class email
                                 <td style="text-align:center;padding: 0 30px 20px">
                                     <p style="margin-bottom: 10px;">Hi ' . $name . ',</p>
                                     <p style="margin-bottom: 25px;">Click On The link blow to reset tour password.</p>
-                                    <a href="https://taresclinic.ng/fogetpassword/recover.php?id=' . $email . '&ip=' . $password . '&it=' . $resetpassword_id . '" style="background-color:#6576ff;border-radius:4px;color:#ffffff;display:inline-block;font-size:13px;font-weight:600;line-height:44px;text-align:center;text-decoration:none;text-transform: uppercase; padding: 0 25px">Reset Password</a>
+                                    <a href="https://dulcetcare.co.uk/fogetpassword/recover.php?id=' . $email . '&ip=' . $password . '&it=' . $resetpassword_id . '" style="background-color:#6576ff;border-radius:4px;color:#ffffff;display:inline-block;font-size:13px;font-weight:600;line-height:44px;text-align:center;text-decoration:none;text-transform: uppercase; padding: 0 25px">Reset Password</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align:center;padding: 20px 30px 40px">
                                     <p>If you did not make this request, please contact us or ignore this message.</p>
-                                    <p style="margin: 0; font-size: 13px; line-height: 22px; color:#9ea8bb;">This is an automatically generated email please do not reply to this email. If you face any issues, please contact us at  support@taresclinic.ng</p>
+                                    <p style="margin: 0; font-size: 13px; line-height: 22px; color:#9ea8bb;">This is an automatically generated email please do not reply to this email. If you face any issues, please contact us at  support@dulcetcare.co.uk</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -645,13 +645,13 @@ class email
                         <tbody>
                             <tr>
                                 <td style="text-align: center; padding:25px 20px 0;">
-                                    <p style="font-size: 13px;">Copyright © ' . $d . ' Tares Clinic. All rights reserved.</p>
+                                    <p style="font-size: 13px;">Copyright © ' . $d . ' Dulcet Care. All rights reserved.</p>
                                     <ul style="margin: 10px -4px 0;padding: 0;">
-                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://facebook.com/"><img style="width: 30px" src="https://taresclinic.ng/mail_images/brand-b.png" alt="brand"></a></li>
-                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://twitter.com/"><img style="width: 30px" src="https://taresclinic.ng/mail_images/brand-e.png" alt="brand"></a></li>
-                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://youtube.com/"><img style="width: 30px" src="https://taresclinic.ng/mail_images/brand-d.png" alt="brand"></a></li>
+                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://facebook.com/"><img style="width: 30px" src="https://dulcetcare.co.uk/mail_images/brand-b.png" alt="brand"></a></li>
+                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://twitter.com/"><img style="width: 30px" src="https://dulcetcare.co.uk/mail_images/brand-e.png" alt="brand"></a></li>
+                                        <li style="display: inline-block; list-style: none; padding: 4px;"><a style="display: inline-block; height: 30px; width:30px;border-radius: 50%; background-color: #ffffff" href="https://youtube.com/"><img style="width: 30px" src="https://dulcetcare.co.uk/mail_images/brand-d.png" alt="brand"></a></li>
                                     </ul>
-                                    <p style="padding-top: 15px; font-size: 12px;">For more detail contact us: info@taresclinic.ng, support@taresclinic.ng</p><p style="padding-top: 15px; font-size: 12px;">This email was sent to you as a registered user of <a style="color: #6576ff; text-decoration:none;" href="https://taresclinic.ng/">Tares Clinic</a>.</p>
+                                    <p style="padding-top: 15px; font-size: 12px;">For more detail contact us: info@dulcetcare.co.uk, support@dulcetcare.co.uk</p><p style="padding-top: 15px; font-size: 12px;">This email was sent to you as a registered user of <a style="color: #6576ff; text-decoration:none;" href="https://dulcetcare.co.uk/">Dulcet Care</a>.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -664,7 +664,7 @@ class email
 </html>';
             $header = "MIME-Version: 1.0" . "\r\n";
             $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+            $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
             $retval = @mail($to, $subject, $content, $header);
             if ($retval) {
                 return  'Mail sent successfully. Check your Mail for Activation Link';
@@ -684,13 +684,13 @@ class email
         $message = '<h3>Congratulations ' . $fullname . '!</h3><br />
 
         <p>We are thrilled to inform you that your registration was successful. You are now officially part of a vibrant community of passionate traders.</p>
-        <p>Follow this link to verify your account. <a href="https://taresclinic.ng/ActivateMail/activate.php?id=' . $email . '&ip=' . $password . '">Verify Account</a> </p>
+        <p>Follow this link to verify your account. <a href="https://dulcetcare.co.uk/ActivateMail/activate.php?id=' . $email . '&ip=' . $password . '">Verify Account</a> </p>
         <br />
-        <p>Best regards, Tares Clinic Team<br /><br /> Powered by: <a href="https://taresclinic.ng">Tares Clinic</a></p>';
+        <p>Best regards, Dulcet Care Team<br /><br /> Powered by: <a href="https://dulcetcare.co.uk">Dulcet Care</a></p>';
         $content = $message; //self::generalBody($message);
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Tares Clinic <support@taresclinic.ng>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@dulcetcare.co.uk>' . "\r\n";
         $retval = @mail($to, $subject, $content, $header);
         if ($retval = true) {
             return  'Mail sent successfully. Check ' . $email . ' email account for `Email Activation Link`!';

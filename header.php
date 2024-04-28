@@ -57,10 +57,10 @@
    <div class="cart-box">
     <!-- <a href="#">
      <figure class="mb-0"><img src="assets/images/search-img.png" alt="search-img"></figure>
+    </a>-->
+    <a class="btn btn-success" href="<?php print $siteApplicationLink; ?>">
+     Apply
     </a>
-    <a href="cart.html">
-     <figure class="mb-0"><img src="assets/images/cart.png" alt="cart"></figure>
-    </a> -->
    </div>
   </nav>
  </div>

@@ -62,6 +62,9 @@ require_once('head.php');
             <h2 data-aos="fade-up" data-aos-duration="700"><?php print $row['title']; ?></h2>
           </div>
           <p data-aos="fade-up" data-aos-duration="700"><?php print $row['description']; ?></p>
+          <div class="banner-btns generic-btn" data-aos="fade-up" data-aos-duration="700">
+            <a class="btn btn-success" href="<?php print $siteApplicationLink; ?>">Apply For <?php print $row['title']; ?></a>
+          </div>
         </div>
         <div class="index2-about-image-box position-relative" data-aos="fade-up" data-aos-duration="700">
           <figure class="mb-0">
